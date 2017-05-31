@@ -1,0 +1,21 @@
+body {
+  /*padding: 50px;*/
+  /*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
+}
+
+a {
+  color: #00B7FF;
+}
+
+.logs{
+  margin: 20px 0;
+}
+.list-group-item-head{
+  cursor: pointer;
+  margin: -10px;
+  padding: 10px;
+}
+.list-group-item-body{
+  margin-top: 10px;
+  display: none;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Webhooks all around.</title>
+
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/stylesheets/style.css">
+
+</head>
+
+<body>
+
+	<div class="container">
+
+		<div class="">
+			<h1>Listen to webhook events</h1>
+		</div>
+
+		<div class="">
+			<form id="connectForm">
+				<label for="basic-url">Webhook URI</label>
+				<div class="input-group">
+					<span class="input-group-addon" id="basic-addon3">/webhook/</span>
+					<input required type="text" class="form-control" id="webhookUri">
+					<span class="input-group-btn">
+						<button class="btn btn-default" type="submit">Connect</button>
+					</span>
+				</div>
+			</form>
+		</div>
+
+
+		<div class="logs">
+			<ul class="list-group" id="log-list">
+				<li class="list-group-item">Logs Appear here.</li>
+			</ul>
+		</div>
+	</div>
+
+
+	<script src="//code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="//ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.js"></script>
+	<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="/javascripts/app.js"></script>
+
+
+
+	<!-- Templates -->
+	<script id="logItemTemplate" type="text/x-jQuery-tmpl">
+		<li class="list-group-item list-group-item list-group-item-info" >
+			<div class="list-group-item-head" onClick="toggleListItem(this)">
+				<span class="label label-default">${method}</span> ${path} <span class="pull-right">${time}</span>
+			</div>
+			<div class="list-group-item-body well">
+				<p>query : <pre>${JSON.stringify(query, undefined, 2)}</pre></p>
+				<p>path : ${path}</p>
+				<p>protocol : ${protocol}</p>
+				<p>method : ${method}</p>
+				<p>heades : <pre>${JSON.stringify(headers, undefined, 2)}</pre></p>
+				<p>body : <pre>${JSON.stringify(body, undefined, 2)}</pre></p>
+				<p>time : ${time}</p>
+			</div>
+		</li>
+	</script>
+	<!-- End Templates -->
+
+</body>
+
+</html>

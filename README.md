@@ -32,7 +32,7 @@ alt="listen to webhooks" src="https://cloud.githubusercontent.com/assets/273188/
 - Create a webhook with custom name e.g. "hello" and click on Connect.
 - A webhook will be created at http://localhost:8080/webhook/hello (local) or http://yourappname.herokuapp.com/webhook/hello (Heroku)
 - Open the Adobe I/O Console
-- Go back to the Integration click Events->Add Webhook and use this new webhook URL e.g. (http://yourappname.herokuapp.com/webhook/hello).
+- Go back to the Integration click Events->Add Webhook and use this new webhook URL e.g. (http://yourappname.herokuapp.com/webhook/hello)
 - Webhook will start listening the events from AEM. You should be able to see your AEM Asset Event updates posted here
 
 <img

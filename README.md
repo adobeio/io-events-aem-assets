@@ -2,6 +2,9 @@
 
 This package provides you with a simple webhook provider that allows you to create webhooks urls dynamically and observe activities on webhook based on path in real time. Furthermore, you can update the slack path to send message into your own slack channel for each AEM Assets event update. 
 
+# Set up AEM Events
+Please refer to [AEM Set up Documentation]https://github.com/adobeio/solutions-ioevents-aem-setup-documentation.
+
 # Install
 
 ## Local/Server deployment

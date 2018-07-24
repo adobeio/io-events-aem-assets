@@ -55,7 +55,7 @@ alt="listen to webhooks" src="https://cloud.githubusercontent.com/assets/273188/
 # Contributors
 - Sarah Xu [@sarahxxu](https://github.com/sarahxxu).
 - Arjun Raj [@rajarju](https://github.com/rajarju).
-- Hiren Shah [@hirenshah111](https://github.com/hirenshah111).
+- Hiren Shah [@hirenoble](https://github.com/hirenoble).
 
 # License
 [MIT](LICENSE)
